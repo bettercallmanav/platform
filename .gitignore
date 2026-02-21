@@ -36,6 +36,16 @@ yarn-error.log*
 # vercel
 .vercel
 
+# credentials & secrets (never commit these)
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+serviceAccount*.json
+.wrangler/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
