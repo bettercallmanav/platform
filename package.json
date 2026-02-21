@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "wrangler pages dev",
-    "deploy": "npm run pages:build && wrangler pages deploy"
+    "deploy": "next build && wrangler pages deploy out --project-name bettercallmanav --commit-dirty=true"
   },
   "dependencies": {
     "next": "^15.2.4",
@@ -17,7 +15,6 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
